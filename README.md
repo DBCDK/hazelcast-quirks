@@ -6,8 +6,8 @@ Having had issues with hazelcast/payara-micro, I did some digging and found some
 
 This fails consistently when there's only one element in the cache
 
-    for (Iterator<Cache.Entry<Set<String>, String>> iterator = cache.iterator() ; iterator.hasNext() ;) {
-        Cache.Entry<Set<String>, String> next = iterator.next();
+    for (Iterator<Cache.Entry> iterator = cache.iterator() ; iterator.hasNext() ;) {
+        Cache.Entry next = iterator.next();
 
 
 with: `java.util.NoSuchElementException` from `com.hazelcast.cache.impl.AbstractClusterWideIterator.next`
