@@ -40,7 +40,7 @@ in a cache, it does not match even when `.hashCode()` returns the same value and
 
 If a copy is made of the set, and that is used for cache-key in cache-2
 
-    curl http://localhost:8080/hazelcast-quirks-1.0-SNAPSHOT/false
+    curl http://localhost:8080/hazelcast-quirks-1.0-SNAPSHOT/true
 
 1st run: exactly as 1st run before
 
